@@ -247,7 +247,7 @@ Return JSON in this exact format:
     try:
 
         response = get_completion_with_fallback(
-            primary_model="llama-3.3-70b-versatile",
+            primary_model="openai/gpt-oss-120b",
             messages=[
                 {"role": "system", "content": "You are a strict ATS resume analyzer that only returns valid JSON."},
                 {"role": "user", "content": prompt}
