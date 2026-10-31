@@ -315,7 +315,7 @@ Output ONLY the enhanced text. Do not add intro, explanations, or quotes.
 """
     try:
         response = get_completion_with_fallback(
-            primary_model="llama-3.3-70b-versatile",
+            primary_model="openai/gpt-oss-120b",
             messages=[
                 {"role": "system", "content": "You are a professional resume optimizer."},
                 {"role": "user", "content": prompt}
@@ -355,7 +355,7 @@ JSON output structure:
 
     try:
         response = get_completion_with_fallback(
-            primary_model="llama-3.3-70b-versatile",
+            primary_model="openai/gpt-oss-120b",
             messages=[
                 {"role": "system", "content": "You are a strict ATS resume tailoring assistant that only outputs valid JSON."},
                 {"role": "user", "content": prompt}
@@ -409,7 +409,7 @@ JSON format:
 """
     try:
         response = get_completion_with_fallback(
-            primary_model="llama-3.3-70b-versatile",
+            primary_model="openai/gpt-oss-120b",
             messages=[
                 {"role": "system", "content": "You are a strict ATS keyword analyzer that only outputs valid JSON."},
                 {"role": "user", "content": prompt}
